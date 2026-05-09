@@ -7,15 +7,15 @@
 
 <h1>To-Do Form</h1>
 
-<form>
-    <input type="text" placeholder="Item ID">
-    <input type="text" placeholder="Item UUID">
-    <input type="text" placeholder="Item Hash">
-    <input type="text" placeholder="Item Name">
-    <br><br>
+<form method="POST" action="/submittodoitem">
+    <label>Item Name:</label><br>
+    <input type="text" name="itemName"><br><br>
 
-    <textarea placeholder="Item Description"></textarea>
-    <br><br>
+    <label>Item Description:</label><br>
+    <input type="text" name="itemDescription"><br><br>
+    <input type="text" name="itemID" placeholder="Item ID"><br><br>
+    <input type="text" name="itemUUID" placeholder="Item UUID"><br><br>
+    <input type="text" name="itemHash" placeholder="Item Hash"><br><br>
 
     <button type="submit">Submit</button>
 </form>
